@@ -1,31 +1,29 @@
 package base;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import java.time.Duration;
 
 public class BasePage {
     protected WebDriver driver;
-    protected WebDriverWait wait;
+    protected static WebDriverWait wait;
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
-    }
-
-    // Method to wait for a WebElement to be present in the DOM
-    protected void waitForElementPresence(By locator) {
-        wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-    }
-    // Method to wait for a WebElement to be invisible
-    protected void waitForElementToBeInvisible(By locator) {
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // Specify timeout in seconds
     }
 
     // Method to find a WebElement by a given locator
-    protected WebElement findElement(By locator) {
-        return driver.findElement(locator);
+    protected static WebElement findElement(By locator) {
+        try {
+            return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        } catch (Exception e) {
+            throw new NoSuchElementException("Element not found with locator: " + locator.toString());
+        }
     }
 
     // Method to click on a WebElement
@@ -34,11 +32,17 @@ public class BasePage {
     }
 
     // Method to enter text into a text field
-    protected void typeText(By locator, String text) {
+    protected void findElementAndTypeText(By locator, String text) {
         WebElement element = findElement(locator);
         element.clear();
         element.sendKeys(text);
     }
+
+    protected void findElementAndClick(By locator) {
+        WebElement element = findElement(locator);
+        element.click();
+    }
+
 
     // Method to retrieve text from a WebElement
     protected String getText(By locator) {

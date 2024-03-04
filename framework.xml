@@ -5,7 +5,7 @@
     <test name="Test on - Chrome">
         <parameter name="browserName" value="chrome"></parameter>
         <classes>
-            <class name="tests.LoginPageTest_DP"/>
+            <class name="tests.LoginPageTest"/>
         </classes>
     </test>
 

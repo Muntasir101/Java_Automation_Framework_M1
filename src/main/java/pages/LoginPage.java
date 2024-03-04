@@ -11,19 +11,14 @@ public class LoginPage extends BasePage {
     }
 
     public void enterEmailAddress(String email) {
-        waitForElementToBeClickable(LoginPageLocators.EMAIL_INPUT);
-        driver.findElement(LoginPageLocators.EMAIL_INPUT).clear();
-        driver.findElement(LoginPageLocators.EMAIL_INPUT).sendKeys(email);
+        findElementAndTypeText(LoginPageLocators.EMAIL_INPUT, email);
     }
 
     public void enterPassword(String password) {
-        waitForElementToBeClickable(LoginPageLocators.PASSWORD_INPUT);
-        driver.findElement(LoginPageLocators.PASSWORD_INPUT).clear();
-        driver.findElement(LoginPageLocators.PASSWORD_INPUT).sendKeys(password);
+        findElementAndTypeText(LoginPageLocators.PASSWORD_INPUT, password);
     }
 
     public void clickLoginButton() {
-        waitForElementToBeClickable(LoginPageLocators.LOGIN_BUTTON);
-        driver.findElement(LoginPageLocators.LOGIN_BUTTON).click();
+        findElementAndClick(LoginPageLocators.LOGIN_BUTTON);
     }
 }
