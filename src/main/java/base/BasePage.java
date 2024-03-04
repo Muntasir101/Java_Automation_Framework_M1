@@ -26,10 +26,6 @@ public class BasePage {
         }
     }
 
-    // Method to click on a WebElement
-    protected void click(By locator) {
-        findElement(locator).click();
-    }
 
     // Method to enter text into a text field
     protected void findElementAndTypeText(By locator, String text) {
