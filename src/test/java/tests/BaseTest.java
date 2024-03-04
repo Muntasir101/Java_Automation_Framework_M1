@@ -44,5 +44,6 @@ public class BaseTest {
     public void tearDown() {
         // Close the WebDriver after each test
         driver.quit();
+        logger.info("Browser Closed !");
     }
 }

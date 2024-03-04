@@ -37,7 +37,7 @@ public class LoginPageTest extends BaseTest {
         //String password = "123456";
 
         // Read the JSON file
-        JsonObject jsonObject = JsonParser.parseReader(new FileReader("src/main/java/data/users.json")).getAsJsonObject();
+        JsonObject jsonObject = JsonParser.parseReader(new FileReader("src/main/java/data/valid_users.json")).getAsJsonObject();
 
         // Extract email and password
         String email = jsonObject.get("email").getAsString();
