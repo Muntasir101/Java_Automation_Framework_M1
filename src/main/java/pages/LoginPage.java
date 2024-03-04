@@ -1,36 +1,32 @@
 package pages;
 
+import base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
-public class LoginPage {
-    private final WebDriver driver;
-    private WebElement EmailAddress;
-    private WebElement Password_field;
-    private WebElement LoginButton;
+public class LoginPage extends BasePage {
+    private final By emailInput = By.cssSelector("input#input-email");
+    private final By passwordInput = By.cssSelector("input#input-password");
+    private final By loginButton = By.cssSelector("[action] .btn-primary");
 
-    public LoginPage(WebDriver driver){
-        this.driver = driver;
-        initializeElements();
+    public LoginPage(WebDriver driver) {
+        super(driver);
     }
 
-    private void initializeElements(){
-        EmailAddress = driver.findElement(By.cssSelector("input#input-email"));
-        Password_field = driver.findElement(By.cssSelector("input#input-password"));
-        LoginButton = driver.findElement(By.cssSelector("[action] .btn-primary"));
+    public void enterEmailAddress(String email) {
+        waitForElementToBeClickable(emailInput);
+        driver.findElement(emailInput).clear();
+        driver.findElement(emailInput).sendKeys(email);
     }
 
-    public void enterEmailAddress(String email){
-        EmailAddress.clear();
-        EmailAddress.sendKeys(email);
-    }
-    public void enterPassword(String password){
-        Password_field.clear();
-        Password_field.sendKeys(password);
-    }
-    public void clickLoginButton(){
-        LoginButton.click();
+    public void enterPassword(String password) {
+        waitForElementToBeClickable(passwordInput);
+        driver.findElement(passwordInput).clear();
+        driver.findElement(passwordInput).sendKeys(password);
     }
 
+    public void clickLoginButton() {
+        waitForElementToBeClickable(loginButton);
+        driver.findElement(loginButton).click();
+    }
 }
