@@ -2,12 +2,12 @@ package pages;
 
 import base.BasePage;
 import locators.LoginPageLocators;
-import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
+import static org.apache.logging.log4j.LogManager.*;
 
 public class LoginPage extends BasePage {
-    private static final Logger logger = LogManager.getLogger(LoginPage.class);
+    private static final Logger logger = getLogger(LoginPage.class);
 
     public LoginPage(WebDriver driver) {
         super(driver);
