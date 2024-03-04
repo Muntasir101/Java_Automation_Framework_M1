@@ -1,5 +1,6 @@
 package tests;
 
+import io.qameta.allure.testng.AllureTestNg;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -7,10 +8,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Reporter;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
 
+
+@Listeners({AllureTestNg.class})
 public class BaseTest {
 
     protected WebDriver driver;
@@ -37,6 +38,7 @@ public class BaseTest {
 
         driver.manage().window().maximize();
     }
+
 
     @AfterMethod
     public void tearDown() {

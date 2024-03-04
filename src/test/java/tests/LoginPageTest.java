@@ -1,5 +1,6 @@
 package tests;
 
+import io.qameta.allure.Description;
 import org.testng.annotations.Test;
 import pages.LoginPage;
 import utils.PropertyReader;
@@ -13,6 +14,7 @@ public class LoginPageTest extends BaseTest {
     private static final Logger logger = LogManager.getLogger(LoginPageTest.class);
 
     @Test
+    @Description("Test login functionality")
     public void testLogin() {
         PropertyReader propertyReader = new PropertyReader("src/main/java/config/baseConfig.properties");
         // Read properties
