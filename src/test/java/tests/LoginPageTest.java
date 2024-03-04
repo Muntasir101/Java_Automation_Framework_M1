@@ -6,6 +6,12 @@ import pages.LoginPage;
 import utils.PropertyReader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 
 public class LoginPageTest extends BaseTest {
 
@@ -15,7 +21,7 @@ public class LoginPageTest extends BaseTest {
 
     @Test
     @Description("Test login functionality")
-    public void testLogin() {
+    public void testLogin() throws FileNotFoundException {
         PropertyReader propertyReader = new PropertyReader("src/main/java/config/baseConfig.properties");
         // Read properties
         String baseUrl = propertyReader.getProperty("baseUrl");
@@ -27,8 +33,16 @@ public class LoginPageTest extends BaseTest {
         loginPage = new LoginPage(driver);
 
         // Test data
-        String email = "mail123@gmail.com";
-        String password = "123456";
+        //String email = "mail123@gmail.com";
+        //String password = "123456";
+
+        // Read the JSON file
+        JsonObject jsonObject = JsonParser.parseReader(new FileReader("src/main/java/data/users.json")).getAsJsonObject();
+
+        // Extract email and password
+        String email = jsonObject.get("email").getAsString();
+        String password = jsonObject.get("password").getAsString();
+
 
         // Perform login
         loginPage.enterEmailAddress(email);
