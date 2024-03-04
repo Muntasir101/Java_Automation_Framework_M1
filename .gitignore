@@ -11,7 +11,7 @@ target/
 *.iws
 *.iml
 *.ipr
-.src/main/java/data/users.json
+src/main/java/data/users.json
 
 ### Eclipse ###
 .apt_generated
