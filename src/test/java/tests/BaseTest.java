@@ -1,5 +1,7 @@
 package tests;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -12,6 +14,7 @@ import org.testng.annotations.Parameters;
 public class BaseTest {
 
     protected WebDriver driver;
+    private static final Logger logger = LogManager.getLogger(BaseTest.class);
 
     @Parameters("browserName")
     @BeforeMethod
@@ -19,12 +22,15 @@ public class BaseTest {
         if (browserName.equalsIgnoreCase("Chrome")) {
             driver = new ChromeDriver();
             Reporter.log("Chrome Browser Launched..");
+            logger.info("Chrome Browser Launched successfully");
         } else if (browserName.equalsIgnoreCase("Firefox")) {
             driver = new FirefoxDriver();
             Reporter.log("Firefox Browser Launched..");
+            logger.info("Firefox Browser Launched successfully");
         } else if (browserName.equalsIgnoreCase("Edge")) {
             driver = new EdgeDriver();
             Reporter.log("Edge Browser Launched..");
+            logger.info("Edge Browser Launched successfully");
         } else {
             System.out.println("Unsupported Browser.Please use Chrome or Firefox or Edge");
         }

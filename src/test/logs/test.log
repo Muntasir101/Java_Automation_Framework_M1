@@ -1,0 +1,6 @@
+20:06:41.918 [TestNG-tests-1] INFO  tests.BaseTest - Chrome Browser Launched successfully
+20:06:45.987 [TestNG-tests-1] INFO  tests.LoginPageTest - Login page open successfully
+20:06:46.166 [TestNG-tests-1] INFO  pages.LoginPage - Email: mail123@gmail.com Type successfully
+20:06:46.283 [TestNG-tests-1] INFO  pages.LoginPage - Password: 123456 Type successfully
+20:06:47.302 [TestNG-tests-1] INFO  pages.LoginPage - Click Login Button successfully
+20:06:47.302 [TestNG-tests-1] INFO  tests.LoginPageTest - Login test completed successfully

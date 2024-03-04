@@ -7,7 +7,7 @@
         </Console>
 
         <!-- File appender -->
-        <File name="File" fileName="src/test/java/logs/test.log">
+        <File name="File" fileName="src/test/logs/test.log">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </File>
     </Appenders>
