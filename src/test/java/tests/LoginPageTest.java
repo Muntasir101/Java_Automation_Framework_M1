@@ -1,4 +1,4 @@
-package Framework.Tests;
+package tests;
 
 import Pages.LoginPage;
 import org.openqa.selenium.WebDriver;
