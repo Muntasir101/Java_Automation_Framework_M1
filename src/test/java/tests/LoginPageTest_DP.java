@@ -1,6 +1,6 @@
 package tests;
 
-import Pages.LoginPage;
+import pages.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
