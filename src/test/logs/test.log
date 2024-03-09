@@ -105,3 +105,63 @@
 23:49:47.348 [TestNG-tests-1] INFO  pages.LoginPage - Email: email5@example.com Type successfully
 23:49:47.468 [TestNG-tests-1] INFO  pages.LoginPage - Password: 11223344 Type successfully
 23:49:48.355 [TestNG-tests-1] INFO  pages.LoginPage - Click Login Button successfully
+22:28:04.301 [TestNG-tests-1] INFO  tests.BaseTest - Chrome Browser Launched successfully
+22:28:05.720 [TestNG-tests-1] INFO  tests.LoginPageTestDD - Login page open successfully
+22:28:06.050 [TestNG-tests-1] INFO  pages.LoginPage - Email: email1@example.com Type successfully
+22:28:06.244 [TestNG-tests-1] INFO  pages.LoginPage - Password: 11223344 Type successfully
+22:28:06.683 [TestNG-tests-1] INFO  pages.LoginPage - Click Login Button successfully
+22:28:07.010 [TestNG-tests-1] INFO  tests.BaseTest - Browser Closed !
+22:28:08.708 [TestNG-tests-1] INFO  tests.BaseTest - Chrome Browser Launched successfully
+22:28:10.104 [TestNG-tests-1] INFO  tests.LoginPageTestDD - Login page open successfully
+22:28:10.424 [TestNG-tests-1] INFO  pages.LoginPage - Email: email2@example.com Type successfully
+22:28:10.624 [TestNG-tests-1] INFO  pages.LoginPage - Password: 11223344 Type successfully
+22:28:11.034 [TestNG-tests-1] INFO  pages.LoginPage - Click Login Button successfully
+22:28:11.246 [TestNG-tests-1] INFO  tests.BaseTest - Browser Closed !
+22:28:12.719 [TestNG-tests-1] INFO  tests.BaseTest - Chrome Browser Launched successfully
+22:28:14.006 [TestNG-tests-1] INFO  tests.LoginPageTestDD - Login page open successfully
+22:28:14.325 [TestNG-tests-1] INFO  pages.LoginPage - Email: email3@example.com Type successfully
+22:28:14.520 [TestNG-tests-1] INFO  pages.LoginPage - Password: 11223344 Type successfully
+22:28:14.967 [TestNG-tests-1] INFO  pages.LoginPage - Click Login Button successfully
+22:28:15.197 [TestNG-tests-1] INFO  tests.BaseTest - Browser Closed !
+22:28:16.742 [TestNG-tests-1] INFO  tests.BaseTest - Chrome Browser Launched successfully
+22:28:17.983 [TestNG-tests-1] INFO  tests.LoginPageTestDD - Login page open successfully
+22:28:18.281 [TestNG-tests-1] INFO  pages.LoginPage - Email: email4@example.com Type successfully
+22:28:18.468 [TestNG-tests-1] INFO  pages.LoginPage - Password: 11223344 Type successfully
+22:28:18.877 [TestNG-tests-1] INFO  pages.LoginPage - Click Login Button successfully
+22:28:19.097 [TestNG-tests-1] INFO  tests.BaseTest - Browser Closed !
+22:28:20.648 [TestNG-tests-1] INFO  tests.BaseTest - Chrome Browser Launched successfully
+22:28:21.764 [TestNG-tests-1] INFO  tests.LoginPageTestDD - Login page open successfully
+22:28:22.061 [TestNG-tests-1] INFO  pages.LoginPage - Email: email5@example.com Type successfully
+22:28:22.267 [TestNG-tests-1] INFO  pages.LoginPage - Password: 11223344 Type successfully
+22:28:22.649 [TestNG-tests-1] INFO  pages.LoginPage - Click Login Button successfully
+22:28:22.878 [TestNG-tests-1] INFO  tests.BaseTest - Browser Closed !
+22:31:17.446 [TestNG-tests-1] INFO  tests.BaseTest - Chrome Browser Launched successfully
+22:31:18.805 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login page open successfully
+22:31:19.111 [TestNG-tests-1] INFO  pages.LoginPage - Email: mail123@gmail.com Type successfully
+22:31:19.289 [TestNG-tests-1] INFO  pages.LoginPage - Password: 123456 Type successfully
+22:31:19.760 [TestNG-tests-1] INFO  pages.LoginPage - Click Login Button successfully
+22:31:19.760 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login test completed successfully
+22:31:20.023 [TestNG-tests-1] INFO  tests.BaseTest - Browser Closed !
+22:32:28.999 [TestNG-tests-1] INFO  tests.BaseTest - Chrome Browser Launched successfully
+22:32:30.388 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login page open successfully
+22:32:30.720 [TestNG-tests-1] INFO  pages.LoginPage - Email: mail123@gmail.com Type successfully
+22:32:30.908 [TestNG-tests-1] INFO  pages.LoginPage - Password: 123456 Type successfully
+22:32:31.325 [TestNG-tests-1] INFO  pages.LoginPage - Click Login Button successfully
+22:32:31.326 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login test completed successfully
+22:32:31.621 [TestNG-tests-1] INFO  tests.BaseTest - Browser Closed !
+22:45:25.061 [TestNG-tests-1] INFO  tests.BaseTest - Chrome Browser Launched successfully
+22:45:26.503 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login page open successfully
+22:45:26.800 [TestNG-tests-1] INFO  pages.LoginPage - Email: mail123@gmail.com Type successfully
+22:45:26.998 [TestNG-tests-1] INFO  pages.LoginPage - Password: 123456 Type successfully
+22:45:27.423 [TestNG-tests-1] INFO  pages.LoginPage - Click Login Button successfully
+22:45:27.796 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Screenshot Captured
+22:45:27.796 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login test completed successfully
+22:45:28.062 [TestNG-tests-1] INFO  tests.BaseTest - Browser Closed !
+22:47:25.561 [TestNG-tests-1] INFO  tests.BaseTest - Chrome Browser Launched successfully
+22:47:26.294 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login page open successfully
+22:47:27.183 [TestNG-tests-1] INFO  pages.LoginPage - Email: mail123@gmail.com Type successfully
+22:47:27.374 [TestNG-tests-1] INFO  pages.LoginPage - Password: 123456 Type successfully
+22:47:27.915 [TestNG-tests-1] INFO  pages.LoginPage - Click Login Button successfully
+22:47:28.288 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Screenshot Captured
+22:47:28.289 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login test completed successfully
+22:47:28.585 [TestNG-tests-1] INFO  tests.BaseTest - Browser Closed !

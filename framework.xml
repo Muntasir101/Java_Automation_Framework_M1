@@ -6,9 +6,9 @@
     </listeners>
 
     <test name="Test on - Chrome">
-        <parameter name="browserName" value="chrome"></parameter>
+        <parameter name="browserName" value="chrome"/>
         <classes>
-            <class name="tests.LoginPageTestDD"/>
+            <class name="tests.LoginPageTestDP"/>
         </classes>
     </test>
 

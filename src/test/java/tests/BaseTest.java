@@ -3,12 +3,22 @@ package tests;
 import io.qameta.allure.testng.AllureTestNg;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Reporter;
 import org.testng.annotations.*;
+import org.openqa.selenium.TakesScreenshot;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 
 @Listeners({AllureTestNg.class})
@@ -45,5 +55,34 @@ public class BaseTest {
         // Close the WebDriver after each test
         driver.quit();
         logger.info("Browser Closed !");
+    }
+
+    public void captureScreenshot(WebDriver driver, String fileName) {
+        // Create screenshots directory if it doesn't exist
+        String screenshotsDirPath = "src/test/screenshots";
+        Path screenshotsDir = Paths.get(screenshotsDirPath);
+        if (!Files.exists(screenshotsDir)) {
+            try {
+                Files.createDirectories(screenshotsDir);
+            } catch (IOException e) {
+                System.out.println("Failed to create screenshots directory: " + e.getMessage());
+                return;
+            }
+        }
+
+        // Capture screenshot
+        if (driver instanceof TakesScreenshot) {
+            File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss"));
+            String screenshotPath = screenshotsDirPath + "/" + fileName + "_" + timestamp + ".png";
+            try {
+                Files.copy(screenshotFile.toPath(), Paths.get(screenshotPath));
+                System.out.println("Screenshot captured: " + screenshotPath);
+            } catch (IOException e) {
+                System.out.println("Failed to capture screenshot: " + e.getMessage());
+            }
+        } else {
+            System.out.println("Driver does not support taking screenshots");
+        }
     }
 }

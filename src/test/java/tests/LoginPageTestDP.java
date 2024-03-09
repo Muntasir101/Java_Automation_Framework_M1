@@ -36,6 +36,8 @@ public class LoginPageTestDP extends BaseTest {
         loginPage.enterEmailAddress(Email_DP);
         loginPage.enterPassword(Password_DP);
         loginPage.clickLoginButton();
+        captureScreenshot(driver,"LoginTestDP");
+        logger.info("Screenshot Captured");
 
         // Log test completion
         logger.info("Login test completed successfully");
