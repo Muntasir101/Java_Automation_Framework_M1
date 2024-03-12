@@ -165,3 +165,73 @@
 22:47:28.288 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Screenshot Captured
 22:47:28.289 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login test completed successfully
 22:47:28.585 [TestNG-tests-1] INFO  tests.BaseTest - Browser Closed !
+22:36:41.524 [TestNG-tests-1] INFO  tests.BaseTest - Chrome Browser Launched successfully
+22:36:43.032 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login page open successfully
+22:36:43.396 [TestNG-tests-1] INFO  pages.LoginPage - Email: mail123@gmail.com Type successfully
+22:36:43.582 [TestNG-tests-1] INFO  pages.LoginPage - Password: 123456 Type successfully
+22:36:44.059 [TestNG-tests-1] INFO  pages.LoginPage - Click Login Button successfully
+22:36:44.398 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Screenshot Captured
+22:36:44.399 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login test completed successfully
+22:36:44.683 [TestNG-tests-1] INFO  tests.BaseTest - Browser Closed !
+22:41:06.348 [TestNG-tests-1] INFO  tests.BaseTest - Chrome Browser Launched successfully
+22:41:07.099 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login page open successfully
+22:41:08.020 [TestNG-tests-1] INFO  pages.LoginPage - Email: mail123@gmail.com Type successfully
+22:41:08.213 [TestNG-tests-1] INFO  pages.LoginPage - Password: 123456 Type successfully
+22:41:08.734 [TestNG-tests-1] INFO  pages.LoginPage - Click Login Button successfully
+22:41:09.131 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Screenshot Captured
+22:41:09.131 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login test completed successfully
+22:41:09.411 [TestNG-tests-1] INFO  tests.BaseTest - Browser Closed !
+22:41:56.064 [TestNG-tests-1] INFO  tests.BaseTest - Chrome Browser Launched successfully
+22:41:57.538 [TestNG-tests-1] INFO  tests.LoginPageTest - Login page open successfully
+22:41:57.891 [TestNG-tests-1] INFO  pages.LoginPage - Email: mail123@gmail.com Type successfully
+22:41:58.115 [TestNG-tests-1] INFO  pages.LoginPage - Password: 123456 Type successfully
+22:41:58.603 [TestNG-tests-1] INFO  pages.LoginPage - Click Login Button successfully
+22:41:58.630 [TestNG-tests-1] INFO  tests.LoginPageTest - Login Assertion done
+22:41:58.631 [TestNG-tests-1] INFO  tests.LoginPageTest - Login test completed successfully
+22:41:58.887 [TestNG-tests-1] INFO  tests.BaseTest - Browser Closed !
+22:44:11.255 [TestNG-tests-1] INFO  tests.BaseTest - Chrome Browser Launched successfully
+22:44:12.681 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login page open successfully
+22:44:13.068 [TestNG-tests-1] INFO  pages.LoginPage - Email: mail123@gmail.com Type successfully
+22:44:13.257 [TestNG-tests-1] INFO  pages.LoginPage - Password: 123456 Type successfully
+22:44:13.693 [TestNG-tests-1] INFO  pages.LoginPage - Click Login Button successfully
+22:44:14.015 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Screenshot Captured
+22:44:14.015 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login test completed successfully
+22:44:14.033 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login Assertion done
+22:44:14.255 [TestNG-tests-1] INFO  tests.BaseTest - Browser Closed !
+22:44:56.149 [TestNG-tests-1] INFO  tests.BaseTest - Chrome Browser Launched successfully
+22:44:57.493 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login page open successfully
+22:44:57.802 [TestNG-tests-1] INFO  pages.LoginPage - Email: mail123@gmail.com Type successfully
+22:44:58.007 [TestNG-tests-1] INFO  pages.LoginPage - Password: 123456 Type successfully
+22:44:58.522 [TestNG-tests-1] INFO  pages.LoginPage - Click Login Button successfully
+22:44:58.828 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Screenshot Captured
+22:44:58.829 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login test completed successfully
+22:44:58.845 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login Assertion done
+22:44:59.109 [TestNG-tests-1] INFO  tests.BaseTest - Browser Closed !
+22:45:01.483 [TestNG-tests-1] INFO  tests.BaseTest - Chrome Browser Launched successfully
+22:45:02.856 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login page open successfully
+22:45:03.128 [TestNG-tests-1] INFO  pages.LoginPage - Email: mail123@gmail.com Type successfully
+22:45:03.318 [TestNG-tests-1] INFO  pages.LoginPage - Password: 1234565 Type successfully
+22:45:03.695 [TestNG-tests-1] INFO  pages.LoginPage - Click Login Button successfully
+22:45:04.014 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Screenshot Captured
+22:45:04.014 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login test completed successfully
+22:45:04.265 [TestNG-tests-1] INFO  tests.BaseTest - Browser Closed !
+22:49:53.787 [TestNG-tests-1] INFO  tests.BaseTest - Chrome Browser Launched successfully
+22:49:55.167 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login page open successfully
+22:49:55.462 [TestNG-tests-1] INFO  pages.LoginPage - Email: mail123@gmail.com Type successfully
+22:49:55.648 [TestNG-tests-1] INFO  pages.LoginPage - Password: 123456 Type successfully
+22:49:56.079 [TestNG-tests-1] INFO  pages.LoginPage - Click Login Button successfully
+22:49:56.433 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Screenshot Captured
+22:49:56.450 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login Assertion done
+22:49:56.451 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login successful!
+22:49:56.451 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login test completed successfully
+22:49:56.727 [TestNG-tests-1] INFO  tests.BaseTest - Browser Closed !
+22:49:59.066 [TestNG-tests-1] INFO  tests.BaseTest - Chrome Browser Launched successfully
+22:50:00.240 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login page open successfully
+22:50:00.550 [TestNG-tests-1] INFO  pages.LoginPage - Email: mail123@gmail.com Type successfully
+22:50:00.760 [TestNG-tests-1] INFO  pages.LoginPage - Password: 1234565 Type successfully
+22:50:01.180 [TestNG-tests-1] INFO  pages.LoginPage - Click Login Button successfully
+22:50:01.604 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Screenshot Captured
+22:50:01.622 [TestNG-tests-1] ERROR tests.LoginPageTestDP - Login Assertion failed: User is not redirected to the homepage after login expected [https://tutorialsninja.com/demo/index.php?route=account/account] but found [https://tutorialsninja.com/demo/index.php?route=account/login]
+22:50:01.622 [TestNG-tests-1] WARN  tests.LoginPageTestDP - Login failed!
+22:50:01.623 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login test completed successfully
+22:50:01.881 [TestNG-tests-1] INFO  tests.BaseTest - Browser Closed !

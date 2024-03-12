@@ -1,6 +1,7 @@
 package tests;
 
 import io.qameta.allure.Description;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.LoginPage;
 import utils.PropertyReader;
@@ -48,6 +49,12 @@ public class LoginPageTest extends BaseTest {
         loginPage.enterEmailAddress(email);
         loginPage.enterPassword(password);
         loginPage.clickLoginButton();
+
+        // Assertion: Verify the user is redirected to the homepage after successful login
+        String expectedHomePageUrl = "https://tutorialsninja.com/demo/index.php?route=account/account"; // Replace with the expected URL of the homepage
+        String actualUrlAfterLogin = driver.getCurrentUrl();
+        Assert.assertEquals(actualUrlAfterLogin, expectedHomePageUrl, "User is not redirected to the homepage after login");
+        logger.info("Login Assertion done");
 
         // Log test completion
         logger.info("Login test completed successfully");
