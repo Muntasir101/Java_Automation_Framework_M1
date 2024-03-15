@@ -235,3 +235,23 @@
 22:50:01.622 [TestNG-tests-1] WARN  tests.LoginPageTestDP - Login failed!
 22:50:01.623 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login test completed successfully
 22:50:01.881 [TestNG-tests-1] INFO  tests.BaseTest - Browser Closed !
+23:26:04.435 [TestNG-tests-1] INFO  tests.BaseTest - Chrome Browser Launched successfully
+23:26:08.650 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login page open successfully
+23:26:08.994 [TestNG-tests-1] INFO  pages.LoginPage - Email: mail123@gmail.com Type successfully
+23:26:09.175 [TestNG-tests-1] INFO  pages.LoginPage - Password: 123456 Type successfully
+23:26:11.061 [TestNG-tests-1] INFO  pages.LoginPage - Click Login Button successfully
+23:26:11.352 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Screenshot Captured
+23:26:11.372 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login Assertion done
+23:26:11.372 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login successful!
+23:26:11.372 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login test completed successfully
+23:26:11.761 [TestNG-tests-1] INFO  tests.BaseTest - Browser Closed !
+23:26:13.816 [TestNG-tests-1] INFO  tests.BaseTest - Chrome Browser Launched successfully
+23:26:19.184 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login page open successfully
+23:26:19.470 [TestNG-tests-1] INFO  pages.LoginPage - Email: mail123@gmail.com Type successfully
+23:26:19.658 [TestNG-tests-1] INFO  pages.LoginPage - Password: 1234565 Type successfully
+23:26:20.286 [TestNG-tests-1] INFO  pages.LoginPage - Click Login Button successfully
+23:26:20.550 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Screenshot Captured
+23:26:20.566 [TestNG-tests-1] ERROR tests.LoginPageTestDP - Login Assertion failed: User is not redirected to the homepage after login expected [https://tutorialsninja.com/demo/index.php?route=account/account] but found [https://tutorialsninja.com/demo/index.php?route=account/login]
+23:26:20.567 [TestNG-tests-1] WARN  tests.LoginPageTestDP - Login failed!
+23:26:20.567 [TestNG-tests-1] INFO  tests.LoginPageTestDP - Login test completed successfully
+23:26:20.818 [TestNG-tests-1] INFO  tests.BaseTest - Browser Closed !
