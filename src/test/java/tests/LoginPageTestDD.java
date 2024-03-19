@@ -7,22 +7,21 @@ import org.testng.annotations.Test;
 import pages.LoginPage;
 import com.opencsv.CSVReader;
 import utils.PropertyReader;
-
 import java.io.FileReader;
 import java.io.IOException;
 
-public class LoginPageTestDD extends BaseTest{
+public class LoginPageTestDD extends BaseTest {
     private static final Logger logger = LogManager.getLogger(LoginPageTestDD.class);
     private LoginPage loginPage;
+
     @Test(dataProvider = "userDataProvider")
-    public void testLogin(String email, String password) {
+    public void testLogin(String email, String password) throws IOException, CsvException {
         PropertyReader propertyReader = new PropertyReader("src/main/java/config/baseConfig.properties");
         // Read properties
         String baseUrl = propertyReader.getProperty("baseUrl");
         // Initialize LoginPage
-        driver.get(baseUrl+ "?route=account/login");
+        driver.get(baseUrl + "?route=account/login");
         logger.info("Login page open successfully");
-
 
         LoginPage loginPage = new LoginPage(driver);
 
@@ -30,7 +29,19 @@ public class LoginPageTestDD extends BaseTest{
         loginPage.enterEmailAddress(email);
         loginPage.enterPassword(password);
         loginPage.clickLoginButton();
+
+        String expectedHomePageUrl = baseUrl+ "?route=account/account";
+
+        // Get the current URL after login
+        String currentUrl = driver.getCurrentUrl();
+
+        // Log the outcome of the test
+        String testOutcome = currentUrl.equals(expectedHomePageUrl) ? "Login" : "Not Login";
+        logger.info("Test Result: " + testOutcome);
+
+        // Write test outcome to CSV file
     }
+
 
     @DataProvider(name = "userDataProvider")
     public Object[][] userDataProvider() throws IOException, CsvException {
